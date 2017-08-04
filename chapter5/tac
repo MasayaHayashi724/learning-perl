@@ -11,3 +11,6 @@ foreach (@file_names) {
   my @lines = <FILE>;
   print reverse @lines;
 }
+
+# print reverse <>;
+# だけでいい！笑

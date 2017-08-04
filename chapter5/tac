@@ -1,0 +1,13 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+my @file_names = reverse @ARGV;
+foreach (@file_names) {
+  if ( ! open FILE, "<$_" ) {
+    die "Cannot open file: $!";
+  }
+  my @lines = <FILE>;
+  print reverse @lines;
+}

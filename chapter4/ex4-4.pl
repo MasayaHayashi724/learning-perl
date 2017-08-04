@@ -2,7 +2,7 @@ use strict;
 use 5.010;
 
 sub greet {
-  my $name = $_[0];
+  my $name = $_[0];  # my $name = shift;
   print "Hi $name! ";
   state $prev;
   if ($prev) {

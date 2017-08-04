@@ -10,8 +10,10 @@ sub total {
 }
 
 sub average {
+  my $count = scalar @_;
+  if ($count == 0) { return }
   my $total = &total(@_);
-  $total / scalar @_;
+  $total / $count;
 }
 
 sub above_average {

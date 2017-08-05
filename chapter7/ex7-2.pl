@@ -8,7 +8,7 @@ if (@ARGV == 0) {
 
 chomp(my @lines = <>);
 foreach (@lines) {
-  if (/(f|F)red/) {
+  if (/(f|F)red/) {  # /[fF]red/ のほうが効率的
     print "$_\n";
   }
 }

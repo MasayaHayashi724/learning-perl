@@ -12,3 +12,10 @@ foreach (@lines) {
     print "$_\n";
   }
 }
+
+# if (/fred/) {
+#   if (/wilma/) {
+#     print;
+#   }
+# }
+# ifをネストしてもOKならこれでもOK

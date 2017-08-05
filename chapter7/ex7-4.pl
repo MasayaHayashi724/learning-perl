@@ -8,7 +8,7 @@ if (@ARGV == 0) {
 
 chomp(my @lines = <>);
 foreach (@lines) {
-  if (/[A-Z][^A-Z]+/) {
+  if (/[A-Z][^A-Z]+/) {  # /[A-Z][a-z]+/ でもOKらしいが、masayaHayashiみたいに途中に大文字が入るやつにもマッチするのはどうなのか？
     print "$_\n";
   }
 }

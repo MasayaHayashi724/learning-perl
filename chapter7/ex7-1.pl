@@ -12,3 +12,10 @@ foreach (@lines) {
     print "$_\n";
   }
 }
+
+# while (<>) {
+#   if (/fred/) {
+#     print;
+#   }
+# }
+# でもOK

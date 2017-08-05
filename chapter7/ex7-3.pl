@@ -8,7 +8,7 @@ if (@ARGV == 0) {
 
 chomp(my @lines = <>);
 foreach (@lines) {
-  if (/\./) {
+  if (/\./) {  # /[.]/ でもOK
     print "$_\n";
   }
 }

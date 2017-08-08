@@ -1,6 +1,8 @@
 use strict;
 use warnings;
 
+# die "No file names supplied!\n" unless @ARGV;  # こんな感じで引数チェックするのもアリ
+
 my $oldest_filename;
 my $age = 0;
 foreach (@ARGV) {

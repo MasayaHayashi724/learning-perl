@@ -16,3 +16,5 @@ foreach my $key (sort keys %modules) {
   my $value = $modules{$key} // "undefined value";
   printf "%${max}s\t$value\n", $key;
 }
+
+# print join "\n", keys %modules; でもOK

@@ -19,3 +19,9 @@ while (1) {
     last;
   }
 }
+
+# # ユーザにyes/noを入力してもらうのではなく、
+# my $Debug = $ENV{DEBUG} // 1;
+# my $answer = int(1 + rand 100);
+# print "Answer: $answer\n" if $Debug;
+# # としてほしかったそう

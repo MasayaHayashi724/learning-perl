@@ -11,3 +11,10 @@ if ($day =~ m/^日|^土/) {
 } else {
   say "get to work";
 }
+
+# # 英語であればSunday、Saturday両方ともSで始まるので、次のようにできる
+# if (`date` =~ m/^S/) {
+#   say "go play";
+# } else {
+#   say "get to work";
+# }
